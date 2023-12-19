@@ -1,0 +1,129 @@
+<!-- https://code-step.com/portfolio1-p2/ -->
+<!-- https://code-step.com/demo/html/portfolio1/# -->
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>トップページ｜ポートフォリオサイト【福元望】</title>
+    <meta name="description" content="LP練習" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="header">
+      <h1 class="site-title">
+        <a th:href="@{/}">
+         NF
+        </a>
+      </h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#history">History</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a class="header-logo-invertocat" href="https://github.com/nozomu-fukumoto" data-hotkey="g d" aria-label="Homepage" data-ga-click="Header, go to dashboard, icon:logo">
+              <svg aria-hidden="true" class="octicon octicon-mark-github" height="32" version="1.1" viewBox="0 0 16 16" width="32"><path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path></svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <!-- メインビジュアル -->
+      <div id="mainvisual">
+        <picture>
+          <source media="(max-width: 600px)" srcset="img/sakurajima.jpg">
+          <img src="img/sakurajima.jpg" alt="テキストテキストテキスト">
+        </picture>
+      </div>
+
+      <!-- About -->
+      <section id="about" class="wrapper">
+        <h2 class="sec-title">About</h2>
+        <h3 class="sub-title">～このポートフォリオサイトについて～</h3>
+        <ul>
+          <li>福元望（ふくもとのぞむ）と申します。</li>
+          <li>就労移行支援事業所に通いながら制作した成果物をまとめたポートフォリオサイトになります。</li>
+          <li>以下、ご覧いただけると幸いです。</li>
+        </ul>
+      </section>
+      <!-- Works -->
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <h3 class="sub-title">～事業所での成果物について～</h3>
+        <ul>
+          <li>
+            <a th:href="@{/works01}">
+              <img src="./img/works1.jpg" alt="work1">
+            </a>
+            <p>社員管理アプリ</p>
+          </li>
+          <li>
+            <img src="./img/works2.jpg" alt="work2">
+            <p>母子健康手帳アプリ</p>
+          </li>
+          <li>
+            <img src="./img/works3.jpg" alt="work3">
+            <p>Figmaデザイン作成</p>
+          </li>
+        </ul>
+      </section>
+      <!-- History -->
+      <section id="history" class="wrapper">
+        <h2 class="sec-title">History</h2>
+        <h3 class="sub-title">～事業所での主な活動について～</h3>
+        <dl>
+          <dt>2023/07</dt>
+          <dd>事業所の文献を活用しExcelの自主学習を行う。結果、VBAエキスパートを取得</dd>
+          <dt>2023/08</dt>
+          <dd>プログラミング講座課題にて、社員管理のアプリケーションを作成</dd>
+          <dt>2023/09</dt>
+          <dd>Webデザイン講座課題にて、和菓子屋のWebページデザインを作成</dd>
+          <dt>2023/10</dt>
+          <dd>事業所イベントの実行委員を行う</dd>
+          <dt>2023/11</dt>
+          <dd>インターンにて「母子健康手帳」アプリケーションを作成し公開</dd>
+        </dl>
+      </section>
+      <!-- Contact -->
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <h3 class="sub-title">お問い合わせは以下のフォームから</h3>        
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfHpe8uZ3mG26XlYVK0nC7J_D1q_ISAZlFyc813PaTm6e-6_w/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
+          <dl>
+            <dt><label for="name">お名前</label></dt>
+            <dd><input type="text" id="name" name="entry.2005620554"></dd>
+            <dt><label for="email">メールアドレス</label></dt>
+            <dd><input type="email" id="email" name="entry.1045644301"></dd>
+            <dt><label for="subject">件名</label></dt>
+            <dd><input type="text" id="subject" name="entry.1065046570"></dd>
+            <dt><label for="name">メッセージ</label></dt>
+            <dd><textarea id="content" name="entry.839337160" cols="30" rows="10"></textarea></dd>
+          </dl>
+          <div class="button"><input type="submit" value="送信"></div>
+        </form>
+      </section>
+
+      <!-- Footer -->
+      <footer id="footer"></footer>
+
+    </main>
+  
+    <script type="text/javascript">
+      let submitted = false;
+    </script>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted){window.location='http://localhost:8080/thanks';}">
+    </iframe>
+  </body>
+</html>

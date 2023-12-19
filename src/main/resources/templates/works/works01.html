@@ -1,0 +1,88 @@
+<!-- https://code-step.com/portfolio1-p2/ -->
+<!-- https://code-step.com/demo/html/portfolio1/# -->
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>成果物紹介ページ｜ポートフォリオサイト【福元望】</title>
+    <meta name="description" content="LP練習" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="header">
+      <h1 class="site-title">
+        <a th:href="@{/works01}">
+         NF
+        </a>
+      </h1>
+      
+    </header>
+
+    <main>
+      <section id="works" class="wrapper">
+        <h2 class="sec-title">Works</h2>
+        <h3 class="sub-title">～事業所での成果物について～</h3>
+
+        <div class="container">
+          <div class="item">
+            <img src="../img/works1.jpg" alt="works01">
+          </div>
+          <div class="item">
+            <p>
+              事業所のプログラミング講座で作成を行いました、社員情報管理のためWebアプリケーションです。
+            </p>
+            <p>
+              ログイン機能をはじめ、社員情報のCRUD機能・検索機能をアプリ内に組み込みました。
+            </p>
+            <hr>
+            <p>今回のアプリは以下技術を使用して作成</p>
+            <table>
+              <thead>
+                <tr>
+                  <th>言語</th>
+                  <th>Java</th>
+                </tr>
+                <tr>
+                  <th>DB</th>
+                  <th>PostgreSQL</th>
+                </tr>
+                <tr>
+                  <th>フレームワーク</th>
+                  <th>SpringBoot</th>
+                </tr>
+              </thead>
+            </table>
+
+          </div>
+        </div>
+
+        <div>
+          <span>
+            ソースコードは
+            <a href="https://github.com/nozomu-fukumoto/itschoolproject">こちら</a>
+            から
+          </span>
+          <p></p>
+          <span>アプリケーションの紹介動画は以下のとおり</span>
+          <video src="./video/sample.mp4" controls></video>
+        </div>
+
+        <hr>
+        <span>
+          <a th:href="@{/}">トップページへ戻る</a>
+        </span>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>    
+
+</html>
