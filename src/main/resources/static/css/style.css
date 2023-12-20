@@ -338,6 +338,10 @@ SP
     line-height: 40px;
   }
 
+  #header ul {
+    margin-top: 20px;
+  }
+
   #header li {
     font-size: 0.8rem;
     margin-left: 20px;

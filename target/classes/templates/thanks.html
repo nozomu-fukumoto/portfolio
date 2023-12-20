@@ -1,0 +1,45 @@
+<!-- https://code-step.com/portfolio1-p2/ -->
+<!-- https://code-step.com/demo/html/portfolio1/# -->
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <title>サンクスページ｜ポートフォリオサイト【福元望】</title>
+    <meta name="description" content="LP練習" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+  </head>
+  <body>
+    <!-- ヘッダー -->
+    <header id="header">
+      <h1 class="site-title">
+        <a  th:href="@{/}">
+         NF
+        </a>
+      </h1>
+      
+    </header>
+
+    <main>
+      <section id="contact" class="wrapper">
+        <h2 class="sec-title">Contact</h2>
+        <h3 class="sub-title">お問い合わせありがとうございます。</h3>
+        <p>内容を確認の上、いただいたメールアドレス宛に返信いたします。</p>
+
+        <hr>
+        <span>
+          <a th:href="@{/}">トップページへ戻る</a>
+        </span>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+
+    </footer>    
+
+</html>
