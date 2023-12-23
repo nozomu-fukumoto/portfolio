@@ -292,6 +292,8 @@ Contact
   margin-right: 30px; /* 任意のマージンを追加 */
   margin-top: auto;
   margin-bottom: auto;
+  display: grid;
+  place-items: center;
 }
 #works .item p {
   font-size: 16px;
@@ -304,6 +306,7 @@ Contact
 #works .item img {
   max-width: 400px;
   height: auto;
+  margin-bottom: 20px;
 }
 
 

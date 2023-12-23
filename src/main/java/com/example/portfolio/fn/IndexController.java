@@ -16,6 +16,16 @@ public class IndexController {
     return "works/works01";
   }
 
+  @RequestMapping("/works02")
+  public String showWorks02() {
+    return "works/works02";
+  }
+
+  @RequestMapping("/works03")
+  public String showWorks03() {
+    return "works/works03";
+  }
+
   @RequestMapping("/thanks")
   public String showThanksPage() {
     return "thanks";
